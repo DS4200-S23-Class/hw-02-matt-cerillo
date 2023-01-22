@@ -1,0 +1,87 @@
+body {
+	font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+#info{
+	text-align: center;
+}
+table {
+  width: 100%;
+  text-align: center;
+}
+th {
+  text-align: center;
+  background-color: skyblue;
+  color: white;
+}
+
+.flexbox {
+	display: flex;
+ 	flex-wrap: nowrap;
+	align: center;
+  	flex-direction: row;
+  	align-items: center;
+}
+
+.flexbox > div {
+  
+}
+
+
+
+img{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div {
+	padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+    
+justify-content: space-evenly;
+}
+
+.circles{
+     stroke:green ;
+     stroke-width:0 ;
+     fill:yellow; 
+}
+
+.circles:hover {
+     stroke:green ;
+     stroke-width:4 ;
+     fill:yellow; 
+}
+path {
+  fill: none;
+  stroke: #646464;
+  stroke-width: 1px;
+  stroke-dasharray: 2,2;
+  stroke-linejoin: round;
+}
+
+.square {
+fill:lime;
+stroke:white;
+stroke-width:4 
+}
+
+.square:hover {
+fill:skyblue;
+stroke:black;
+stroke-width:7
+}
+
+#square{
+  stroke: black;
+  fill: blue;
+}
