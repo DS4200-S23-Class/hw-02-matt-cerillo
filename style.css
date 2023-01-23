@@ -27,7 +27,7 @@ th {
 }
 
 .flexbox > div {
-  
+  max-width: 50%;
 }
 
 
