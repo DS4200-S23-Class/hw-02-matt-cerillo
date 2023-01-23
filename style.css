@@ -12,6 +12,7 @@ table {
   width: 100%;
   text-align: center;
 }
+
 th {
   text-align: center;
   background-color: skyblue;
@@ -22,8 +23,8 @@ th {
 	display: flex;
  	flex-wrap: nowrap;
 	align: center;
-  	flex-direction: row;
-  	align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .flexbox > div {
@@ -71,7 +72,7 @@ path {
 
 .square {
 fill:lime;
-stroke:white;
+stroke:black;
 stroke-width:4 
 }
 
