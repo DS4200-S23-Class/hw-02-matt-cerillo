@@ -9,9 +9,10 @@ h1 {
 	text-align: center;
 }
 table {
-  width: 100%;
+  width: 75%;
   text-align: center;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 tr:nth-child(even) {background-color: #f2f2f2;}
 th {
@@ -51,7 +52,8 @@ justify-content: space-evenly;
 .circles{
      stroke:green ;
      stroke-width:0 ;
-     fill:yellow; 
+     fill:yellow;
+     opacity: .5; 
 }
 
 .circles:hover {
@@ -67,9 +69,10 @@ path {
   stroke-linejoin: round;
 }
 
-.rect {
+.rect{
 fill:lime;
 stroke:white;
+style = fill:rgb(0,0,255); stroke-width:4; stroke:rgb(0,0,0);
 stroke-width:4 
 }
 
