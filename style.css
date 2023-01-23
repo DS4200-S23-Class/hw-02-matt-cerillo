@@ -67,19 +67,19 @@ path {
   stroke-linejoin: round;
 }
 
-.square {
+.rect {
 fill:lime;
 stroke:white;
 stroke-width:4 
 }
 
-.square:hover {
+.rect:hover {
 fill:skyblue;
 stroke:black;
 stroke-width:7
 }
 
-#square{
+#rect{
   stroke: black;
   fill: blue;
 }
