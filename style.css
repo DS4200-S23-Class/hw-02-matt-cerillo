@@ -9,28 +9,30 @@ h1 {
 	text-align: center;
 }
 table {
-  width: 75%;
+  width: 100%;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
-tr:nth-child(even) {background-color: #f2f2f2;}
+
 th {
   text-align: center;
   background-color: skyblue;
   color: white;
-  
 }
 
 .flexbox {
 	display: flex;
  	flex-wrap: nowrap;
 	align: center;
-  	flex-direction: row;
-  	align-items: center;
+  flex-direction: row;
+  align-items: center;
 }
+
 .flexbox > div {
+  max-width: 50%;
 }
+
+
+
 img{
     padding: 0;
     display: block;
@@ -52,12 +54,11 @@ justify-content: space-evenly;
 .circles{
      stroke:green ;
      stroke-width:0 ;
-     fill:yellow;
-     opacity: .5; 
+     fill:yellow; 
 }
 
 .circles:hover {
-     stroke:green ;
+     stroke:blue ;
      stroke-width:4 ;
      fill:yellow; 
 }
@@ -69,20 +70,18 @@ path {
   stroke-linejoin: round;
 }
 
-.rect{
+.square {
 fill:lime;
-stroke:white;
-style = fill:rgb(0,0,255); stroke-width:4; stroke:rgb(0,0,0);
+stroke:black;
 stroke-width:4 
 }
 
-.rect:hover {
+.square:hover {
 fill:skyblue;
 stroke:black;
-stroke-width:7
 }
 
-#rect{
+#square{
   stroke: black;
   fill: blue;
 }

@@ -2,211 +2,240 @@
 <html>
 
 
-   <head>
-       <link rel="stylesheet" href="style.css">
-       <meta charset=utf-8/>
-       <title>hw-02</title>
-   </head>
+
+
+  <head>
+      <link rel="stylesheet" href="style.css">
+      <meta charset=utf-8/>
+      <title>hw-02</title>
+  </head>
 
 
 
 
-   <body>
 
 
-       <div id = "data-abstraction">
-           <div class = "info">
-               <h1>
-                   Dataset Types
-               </h1>
-               <table>
-                   <tr>
-                       <th>Data</th>
-                       <th>Link</th>
-                       <th>Dataset type</th>
-                   </tr>
-                   <tr>
-                       <td>Airports</td>
-                       <td><a href="data/Airports.csv" download >link</a></td>
-                       <td>Table</td>
-                   </tr>
-                   <tr>
-                       <td>Google-web</td>
-                       <td><a href="data/Google-Web.txt" target="_blank">link</a></td>
-                       <td>Graph</td>
-                   </tr>
-                   <tr>
-                       <td>UFO</td>
-                       <td><a href="data/UFO.csv" target="_blank">link</a></td>
-                       <td>Table</td>
-                   </tr>
-               </table>
-           </div>
-           <div class = "info">
-               <h1> Data Types </h1>
-               <h2>Airports</h2>
-               <ul>
-                   <li>Columns</li>
 
+
+  <body>
+
+
+
+
+      <div id = "data-abstraction">
+          <div class = "info">
+              <h1>
+                  Dataset Types
+              </h1>
+              <table>
+                  <tr>
+                      <th>Data</th>
+                      <th>Link</th>
+                      <th>Dataset type</th>
+                  </tr>
+                  <tr>
+                      <td>Airports</td>
+                      <td><a href="data/Airports.csv" download >link</a></td>
+                      <td>Table</td>
+                  </tr>
+                  <tr>
+                      <td>Google-web</td>
+                      <td><a href="data/Google-Web.txt" target="_blank">link</a></td>
+                      <td>Graph</td>
+                  </tr>
+                  <tr>
+                      <td>UFO</td>
+                      <td><a href="data/UFO.csv" target="_blank">link</a></td>
+                      <td>Table</td>
+                  </tr>
+              </table>
+          </div>
+          <div class = "info">
+              <h1> Data Types </h1>
+              <h2>Airports</h2>
+              <ul>
+                  <li>Columns</li>
+
+
+                  <ul>
+                   <li>Airport Name - Attribute</li>
                    <ul>
-                    <li>Airport Name - Attribute</li>
-                    <ul>
-                        <li>Categorical</li>
-                    </ul>
+                       <li>Categorical</li>
                    </ul>
+                  </ul>
 
+
+                  <ul>
+                   <li>Latitude/Longitude - Position</li>
+                  </ul>
+      
+                  <li>Rows</li>
+                  <ul>
+                   <li>Each row is an item of the datatset</li>
+                  </ul>
+              </ul>
+
+
+              <h2>Google-Web</h2>
+              <ul>
+                  <li>Columns</li>
+                  <ul>
+                   <li>FromNodeId</li>
                    <ul>
-                    <li>Latitude/Longitude - Position</li>
+                       <li>Item</li>
                    </ul>
-        
-                   <li>Rows</li>
+                   <li>ToNodeId</li>
                    <ul>
-                    <li>Each row is an item of the datatset</li>
+                       <li>Item</li>
                    </ul>
-               </ul>
-
-               <h2>Google-Web</h2>
-               <ul>
-                   <li>Columns</li>
+                  </ul>
+                  <li>Row</li>
+                  <ul>
+                   <li>FromNodeId,ToNodeId</li>
                    <ul>
-                    <li>FromNodeId</li>
-                    <ul>
-                        <li>Item</li>
-                    </ul>
-                    <li>ToNodeId</li>
-                    <ul>
-                        <li>Item</li>
-                    </ul>
-                   </ul>
-                   <li>Row</li>
-                   <ul>
-                    <li>FromNodeId,ToNodeId</li>
-                    <ul>
-                        <li>Link</li>
-                    </ul>
-                </ul>
-               </ul>
-
-               <h2>UFO</h2>
-               <ul>
-                   <li>Columns</li>
-                   <ul>
-                    <li>Date/Time - Attribute</li>
-                    <ul>
-                        <li>Ordinal Sequential</li>
-                    </ul>
-                    <li>City - Attribute</li>
-                    <ul>
-                        <li>Categoricall</li>
-                    </ul>
-                    <li>State - Attribute</li>
-                    <ul>
-                        <li>Categorical</li>
-                    </ul>
-                    <li>Country - Attribute</li>
-                    <ul>
-                        <li>Categorical</li>
-                    </ul>
-                    <li>Shape - Attribute</li>
-                    <ul>
-                        <li>Categorical</li>
-                    </ul>
-                    <li>Duration (secs) - Attribute</li>
-                    <ul>
-                        <li>Quantitative Sequential</li>
-                    </ul>
-
-                   </ul>
-
-                   <li>Rows</li>
-                   <ul>
-                    <li>Each row is an item of the datatset</li>
+                       <li>Link</li>
                    </ul>
                </ul>
-           </div>
-       </div>
-       <div id = "task-abstraction">
-           <h1>Task Abstraction</h1>
-           <div class = flexbox>
-               <div> <img src="img/vis1.png" alt="vis1.png" class = "fit1">
-                   <p>
-                    <ul>
-                        <li>High - Its high level action is present because the graph is presenting 
-                   temperatures over a couple of decades.</li>
+              </ul>
 
-                        <li>Medium - Its medium level is Lookup because we know exactly when and what days we are looking 
-                   for as the last 3 days are highlighted</li>
-                        <li>Low - Its low level is Identify because it singles out the last 3 days by highlighting 
-                   the 3 dots.</li>
-                   <li>Target(s) - Attributes:Distribution since it is showing the distribution over a couple of years and All Data:Outliers since it is highligthing 3 of the data points</li>
+
+              <h2>UFO</h2>
+              <ul>
+                  <li>Columns</li>
+                  <ul>
+                   <li>Date/Time - Attribute</li>
+                   <ul>
+                       <li>Ordinal Sequential</li>
                    </ul>
-                    </p>
-               </div>
-               <div> <img src="img/vis2.png" alt="vis2.png" class = "fit2">
-                   <p>
-                    <ul>
-                        <li>High - Its high level action is also Present since it displays information 
-                   without discovering or trying to explore something.</li>
-                        <li>Medium - Its medium level action is Browse since we do not know the target
-                   but know the location of where we are supposed to look since all the data is towards one side</li>
-                        <li>Low - The low level action is compare since the visualization is comparing to cities</li>
-                        <li>Target(s) - Attributes:Distribution since it is showing the distribution over a couple of years</li>
-                    </ul>
-                    </p>
-               </div>
-           </div>
-       </div>
+                   <li>City - Attribute</li>
+                   <ul>
+                       <li>Categoricall</li>
+                   </ul>
+                   <li>State - Attribute</li>
+                   <ul>
+                       <li>Categorical</li>
+                   </ul>
+                   <li>Country - Attribute</li>
+                   <ul>
+                       <li>Categorical</li>
+                   </ul>
+                   <li>Shape - Attribute</li>
+                   <ul>
+                       <li>Categorical</li>
+                   </ul>
+                   <li>Duration (secs) - Attribute</li>
+                   <ul>
+                       <li>Quantitative Sequential</li>
+                   </ul>
 
 
-       <div id = "decoration" class = flexbox>
-           <div>
-               <svg width="100" height="100" class = "circles">
-               <circle cx="50" cy="50" r="40"/>
-               </svg>
-           </div>
-           <div>
-               <svg height="100" width="100" class = "rect">
-                <rect height="100" width="100"/>
-               </svg>
-           </div>
-           <div>
-               <svg width="100" height="100" class = "circles">
-               <circle cx="50" cy="50" r="40"/>
-               </svg>
-           </div>
-           <div>
-               <svg height="100" width="100" class="rect">
+                  </ul>
+
+
+                  <li>Rows</li>
+                  <ul>
+                   <li>Each row is an item of the datatset</li>
+                  </ul>
+              </ul>
+          </div>
+      </div>
+      <div id = "task-abstraction">
+          <h1>Task Abstraction</h1>
+          <div class = flexbox>
+              <div> <img src="img/vis1.png" alt="vis1.png" class = "fit1">
+                  <p>
+                   <ul>
+                       <li>High - Its high level action is present because the graph is presenting
+                  temperatures over a couple of decades.</li>
+
+
+                       <li>Medium - Its medium level is Lookup because we know exactly when and what days we are looking
+                  for as the last 3 days are highlighted</li>
+                       <li>Low - Its low level is Identify because it singles out the last 3 days by highlighting
+                  the 3 dots.</li>
+                  <li>Target(s) - Attributes:Distribution since it is showing the distribution over a couple of years and All Data:Outliers since it is highligthing 3 of the data points</li>
+                  </ul>
+                   </p>
+              </div>
+              <div> <img src="img/vis2.png" alt="vis2.png" class = "fit2">
+                  <p>
+                   <ul>
+                       <li>High - Its high level action is also Present since it displays information
+                  without discovering or trying to explore something.</li>
+                       <li>Medium - Its medium level action is Browse since we do not know the target
+                  but know the location of where we are supposed to look since all the data is towards one side</li>
+                       <li>Low - The low level action is compare since the visualization is comparing to cities</li>
+                       <li>Target(s) - Attributes:Distribution since it is showing the distribution over a couple of years</li>
+                   </ul>
+                   </p>
+              </div>
+          </div>
+      </div>
+
+
+
+
+      <div id = "decoration" class = flexbox>
+          <div>
+              <svg width="100" height="100" class = "circles">
+              <circle cx="50" cy="50" r="40"/>
+              </svg>
+          </div>
+          <div>
+              <svg height="100" width="100" class = "rect">
                <rect height="100" width="100"/>
-               </svg>
-           </div>
-           <div>
-               <svg width="100" height="100" class = "circles">
-               <circle cx="50" cy="50" r="40"/>
-               </svg>
-           </div>
-       </div>
-       </div>
-
-
-       <h3 style="text-align:center">Acknowledgements</h3>
-       <ul>
-           <li><a href = "https://www.w3schools.com/html/default.asp"> HTML Code and Syntax</a></li>
-           <li><a href = "https://www.w3schools.com/css/default.asp"> CSS Code and Syntax</a></li>
-           <li><a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> Flexbox Using CSS</li>
-           <li><a href = "https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp"> SVG Graphic Basics using HTML</li>
-           <li><a href = "https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.008407%2C-71.694162%2C8.00&showTable=true"> Data Source for Airports Dataset</a></li>
-           <li><a href = "https://snap.stanford.edu/data/web-Google.html"> Data Source for Google-Web Dataset</li>
-           <li><a href = "https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download"> Data Source for UFO Dataset</a></li>
-       </ul>
-
+              </svg>
+          </div>
+          <div>
+              <svg width="100" height="100" class = "circles">
+              <circle cx="50" cy="50" r="40"/>
+              </svg>
+          </div>
+          <div>
+              <svg height="100" width="100" class="rect">
+              <rect height="100" width="100"/>
+              </svg>
+          </div>
+          <div>
+              <svg width="100" height="100" class = "circles">
+              <circle cx="50" cy="50" r="40"/>
+              </svg>
+          </div>
+      </div>
+      </div>
 
 
 
 
+      <h3 style="text-align:center">Acknowledgements</h3>
+      <ul>
+          <li><a href = "https://www.w3schools.com/html/default.asp"> HTML Code and Syntax</a></li>
+          <li><a href = "https://www.w3schools.com/css/default.asp"> CSS Code and Syntax</a></li>
+          <li><a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> Flexbox Using CSS</li>
+          <li><a href = "https://www.geeksforgeeks.org/html-svg-basics/?ref=lbp"> SVG Graphic Basics using HTML</li>
+          <li><a href = "https://geo-massdot.opendata.arcgis.com/datasets/17eb7e286f4e4942aeef500f5ef6bfcd_0/explore?location=42.008407%2C-71.694162%2C8.00&showTable=true"> Data Source for Airports Dataset</a></li>
+          <li><a href = "https://snap.stanford.edu/data/web-Google.html"> Data Source for Google-Web Dataset</li>
+          <li><a href = "https://www.kaggle.com/datasets/NUFORC/ufo-sightings?resource=download"> Data Source for UFO Dataset</a></li>
+      </ul>
 
 
 
-   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
 
 
 </html>
